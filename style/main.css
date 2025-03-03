@@ -16,13 +16,23 @@ body{
     
 header {
     height: 100vh;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.452);
     display: flex;
-    justify-content: space-around;
     align-items: center;
     flex-direction: column;
 
     grid-row: span 5 / span 5;
+}
+
+.navbar{
+    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.452);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    position: fixed;
 }
 
 .logo{
@@ -88,7 +98,7 @@ main{
 
 
 .intro{
-    margin-top: 150px;
+    margin-top: 100px;
     width: 580px;
 }
 
