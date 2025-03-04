@@ -5,41 +5,21 @@
     list-style: none;
     text-decoration: none;
 }
-
-body{
-    padding: 2px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 8px;
-}
     
 header {
-    height: 100vh;
+    padding: 17px;
+    height: 13vh;
+    background: #2c3e50;
+    color: white;
     display: flex;
     align-items: center;
-    flex-direction: column;
-
-    grid-row: span 5 / span 5;
-}
-
-.navbar{
-    
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.452);
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    width: 20%;
-    height: 100%;
-    position: fixed;
 }
 
 .logo{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
 }
 
 nav{
@@ -53,7 +33,6 @@ nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
 nav ul li{
@@ -65,19 +44,13 @@ nav ul li{
 }
 
 nav ul li a{
-    color: black;
-}
-
-.soporte a{
-    color: black;
+    color: #fff;
 }
 
 section{
     height: 55vh;
     color: #fff;
     background: #34495e;
-    grid-row: span 4 / span 4;
-    grid-column-start: 5;
 }
 
 section a{
@@ -89,10 +62,6 @@ main{
     display: flex;
     align-items: center;
     flex-direction: column;
-   
-
-    grid-column: span 3 / span 3;
-    grid-row: span 5 / span 5;
 }
 
 
