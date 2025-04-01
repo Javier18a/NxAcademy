@@ -55,10 +55,9 @@ section{
 }
 
 main{
-    width: 80%;
+    width: 90%;
     height: auto;
     display: flex;
-    align-items: center;
     flex-direction: column;
 }
 article{
@@ -71,6 +70,7 @@ article{
 
 article .cta{
     color: #fff;
+    width: 100%;
     height: auto;
     display: flex;
     align-items: center;

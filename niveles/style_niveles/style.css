@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.4;
+}
+
+.hero{
+    width: 100%;
+}
+
+/*Nivel principiante*/
+
+.beginner{
+
+    p{
+        width: 700px;
+    }
+
+}
+
+.alphabet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+
+.basic{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.basic {
+    .basic-phrases,
+    .colors,
+    .days-of-week,
+    .body-parts,
+    .classroom-objects,
+    .food-and-drinks,
+    .weather,
+    .family-members{
+        margin: 20px;
+        width: 330px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
