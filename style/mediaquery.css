@@ -1,0 +1,30 @@
+/* Media query for mobile devices with a max width of 768px */
+@media (max-width: 768px) {
+    /* Add your styles for mobile here */
+    body {
+        font-size: 14px;
+    }
+
+    header{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+        nav{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+
+            ul{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    
+}
