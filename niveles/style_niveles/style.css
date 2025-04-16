@@ -14,9 +14,14 @@ body {
 /*Nivel principiante*/
 
 .beginner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     p{
-        width: 700px;
+        margin-top: 20px;
+        width: 570px;
     }
 
 }
@@ -29,6 +34,49 @@ body {
     margin-top: 20px;
 }
 
+.pronouns{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pronouns_tables{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pronouns-table{
+    margin: 20px;
+    width: 350px;
+    flex-direction: column;
+}
+
+.Common-and-connectors{
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    p{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 570px;
+    }
+}
+
+.Com-Con{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
 
 .basic{
     margin-top: 20px;
@@ -37,6 +85,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 
@@ -55,4 +104,83 @@ body {
         align-items: center;
         flex-direction: column;
     }
+}
+
+.Content-basic{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap:  wrap;
+    justify-content: center;
+}
+
+
+.pronouns{
+
+    p{
+        margin-top: 20px;
+        width: 550px;
+    }
+}
+
+.numbers{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    p{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 550px;
+    }
+}
+
+.basic{
+
+    p{
+        width: 600px;
+    }
+}
+
+.examples{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h2{
+        margin-top:20px;
+        margin-bottom: 20px;
+    }
+
+    p{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 550px;
+    }
+
+}
+
+
+
+
+
+
+footer{
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+    background:  #2c3e50;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
 }
