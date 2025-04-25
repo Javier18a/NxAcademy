@@ -11,6 +11,17 @@ body {
     width: 100%;
 }
 
+/*Ingles_Page*/
+
+.courses{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
 /*Nivel principiante*/
 
 .beginner{

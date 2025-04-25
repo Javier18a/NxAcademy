@@ -1,30 +1,140 @@
 /* Media query for mobile devices with a max width of 768px */
-@media (max-width: 768px) {
-    /* Add your styles for mobile here */
-    body {
+@media screen and (max-width: 768px) {
+
+    header {
+        font-size: 15px;
+    }
+
+    p {
         font-size: 14px;
     }
 
-    header{
-        height: auto;
-        display: flex;
+    nav>ul {
         flex-direction: column;
+        background: #2c3e50;
+        position: fixed;
+        left: 0;
+        top: 100px;
+        width: 100%;
+        height: 0px;
+        transition: all 300ms ease;
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+    }
 
-        nav{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: auto;
+    nav>ul>li>a {
+        color: white;
+    }
 
-            ul{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
+    nav>ul>.aprende {
+        color: white;
+    }
+
+    nav>ul>li>a:hover {
+        transform: scale(1);
+    }
+
+    nav>ul>.aprende:hover {
+        transform: scale(1);
+    }
+
+    nav ul li ul {
+        left: 90px;
+
+    }
+
+    nav>ul>li:hover ul {
+        left: 100px;
+    }
+
+    nav ul li ul:before {
+        display: none;
+    }
+
+    nav ul li:hover ul {
+        visibility: visible;
+        opacity: 1;
+        top: 5px;
+    }
+
+    #lable__check {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .icon__menu {
+        display: flex;
+        color: white;
+    }
+
+    #check__menu:checked~nav>ul {
+        height: 300px;
+        visibility: visible;
+        opacity: 1;
+    }
+
+
+
+
+    /*Index principal*/
+
+    .intro-index{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        max-width: 310px;
+        height: 120px;
+
+        h1{
+            font-size: 24px;
         }
     }
 
+    .about-nxacademy{
+        max-width: 310px;
+
+        p{
+            max-width: 300px;
+        }
+    }
+
+
+
+    /*Nosotros*/
+
+    .hero{
+        padding: 10px;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        main{
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .intro{
+                max-width: 310px;
+
+                p{
+                    max-width: 300px;
+                }
+            }
+
+            .about-we{
+                max-width: 310px;
+
+                p{
+                    max-width: 300px;
+                }
+            }
+        }
+    }
     
 }

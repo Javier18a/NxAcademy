@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src ="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/mediaquery.css">
     <title>NxAcademy</title>
 </head>
@@ -15,64 +16,106 @@
 
     <header>
         <div class="logo">
-            <h1>NxAcademy</h1>
+            <h1 translate="no"> NxAcademy</h1>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="extra/cursos.html"> Cursos</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#"> Contacto</a></li>
-                <li><a href="#">Soporte</a></li>
-            </ul>
-        </nav>
+        <div class="container__menu">
+            <div class="menu">
+                <input type="checkbox" id="check__menu">
+                <label id="lable__check" for="check__menu">
+                    <i class="fa-solid fa-bars icon__menu"></i>
+                </label>
+                <nav>
+                    <ul>
+                        <li><a href="../../index.html">Inicio</a></li>
+                        <li class="aprende"> Cursos
+                            <ul>
+                                <li><a href="./Cursos/Cursos-ingles/Ingles_Page.html">Ingles</a></li>
+
+                                <li><a href="">Español <i class="fa-solid fa-lock"></i></a></li>
+
+                                <li><a href="">Francés <i class="fa-solid fa-lock"></i> </a> </li>
+
+                                <li><a href="">Portugués <i class="fa-solid fa-lock"></i></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./extra/Nosotros.html">Nosotros</a></li>
+                        <li><a href="./extra/Contactos.html">Contactos</a></li>
+                        <li><a href="./extra/Soporte.html">Soporte</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
 
-    <section class="hero">
+    <main class="index">
 
-        <main>
-            <div class="intro">
-                <h2>NxAcademy</h2>
-                <p>Tu viaje para dominar el inglés comienza aquí. <br><br>
-    
-                    En NxAcademy, nos apasiona ayudarte a alcanzar tus metas y llevar tu nivel de inglés al siguiente nivel.
-                    Ya seas principiante o avanzado, nuestra plataforma está diseñada para ofrecerte cursos interactivos,
-                    flexibles y efectivos que se adaptan a tus necesidades. <br><br>
-    
-                    Explora nuestros cursos, disfruta de una experiencia de aprendizaje única y aprende inglés de manera
-                    divertida, práctica y a tu propio ritmo.</p>
-            </div>
-    
-            <div class="about-we">
-                <h2>Quienes somos</h2>
-                <p>En NxAcademy, nos especializamos en ofrecer cursos de inglés diseñados para ayudarte a alcanzar tus
-                    objetivos de aprendizaje de manera efectiva y flexible. Nos enfocamos en ofrecerte un espacio donde
-                    puedas encontrar los cursos más adecuados para ti, adaptados a tus necesidades y ritmo de aprendizaje.
-                    <br><br>
-    
-                    Nuestra misión es hacer que el aprendizaje del inglés sea accesible y personalizado. A medida que
-                    creamos nuevos niveles y cursos, nos aseguramos de que cada contenido sea de calidad, interactivo y esté
-                    diseñado para maximizar tu comprensión y habilidades en el idioma. <br><br>
-    
-                    Con NxAcademy, podrás avanzar a tu propio ritmo, eligiendo el curso que mejor se adapte a tu nivel, sin
-                    importar si eres principiante o tienes más experiencia. Cada nivel y curso se construye con el objetivo
-                    de ayudarte a mejorar en áreas clave del inglés: hablar, escribir, escuchar y leer.
-                </p>
-            </div>
-        </main>
+        <div class="intro-index">
+            <h1 id="title1" style="opacity: 0; transition: opacity 2s;">Bienvenidos a NxAcademy</h1>
+            <h1 id="title2" style="opacity: 0; transition: opacity 2s; display: none;">Academia de enseñanza de idiomas
+                en Online</h1>
+        </div>
+
+        <section class="about-nxacademy">
+            <p>NxAcademy es una plataforma de aprendizaje en línea dedicada a la enseñanza de idiomas. Ofrecemos cursos
+                interactivos y personalizados para ayudarte a alcanzar tus metas lingüísticas desde la comodidad de tu
+                hogar. Únete a nuestra comunidad global de estudiantes y comienza tu viaje hacia el dominio de un nuevo
+                idioma hoy mismo.</p>
+
+            <button>
+                <a href="./extra/Nosotros.html">Conoce más sobre nosotros</a>
+            </button>
+        </section>
+
+    </main>
 
 
-        <article>
-            <div class="cta">
-                <h2>¿Listo para comenzar?</h2>
-                <a href="extra/cursos.html" class="btn">Explorar cursos</a>
-                <a href="">Como debo empezar?</a>
-                <a href=""></a>
-            </div>
-        </article>
-    </section>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Aprende idiomas fácil. Todos los derechos reservados.</p>
+            <p>Desarrollado por Ing.Javier</p>
+        </div>
+    </footer>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const title1 = document.getElementById("title1");
+            const title2 = document.getElementById("title2");
 
+            function toggleTitles() {
+                // Show the first title
+                title1.style.opacity = 1;
+                title1.style.display = "block";
+                title2.style.opacity = 0;
+
+                // After 3 seconds, hide the first title and show the second
+                setTimeout(() => {
+                    title1.style.opacity = 0;
+                    setTimeout(() => {
+                        title1.style.display = "none";
+                        title2.style.display = "block";
+                        setTimeout(() => {
+                            title2.style.opacity = 1; // Smoothly fade in the second title
+                        }, 50); // Small delay to ensure display change is applied
+
+                        // After 3 seconds, switch back to the first title
+                        setTimeout(() => {
+                            title2.style.opacity = 0;
+                            setTimeout(() => {
+                                title2.style.display = "none";
+                                title1.style.display = "block";
+                                setTimeout(() => {
+                                    title1.style.opacity = 1; // Smoothly fade in the first title
+                                }, 50); // Small delay to ensure display change is applied
+                                toggleTitles(); // Restart the loop
+                            }, 2000); // Wait for the fade-out transition of title2
+                        }, 3000); // Duration before switching back to title1
+                    }, 2000); // Wait for the fade-out transition of title1
+                }, 3000); // Duration before switching titles
+            }
+
+            toggleTitles(); // Start the loop
+        });
+    </script>
     <script src="js/main.js"></script>
 </body>
 

@@ -1,0 +1,163 @@
+@media screen and (max-width: 768px){
+
+.beginner{
+    max-width: 310px;
+
+}
+
+.beginner p{
+    max-width: 300px;
+}
+
+.alphabet{
+    max-width: 300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+alphabet-table{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pronouns{
+    max-width: 300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    p{
+        max-width: 300px;
+    }
+}
+
+.pronouns_tables{
+    max-width: 300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+table{
+    font-size: 14px;
+}
+
+th{
+    padding: 5px;
+}
+
+td{
+    padding: 3px;
+}
+
+.Common-and-connectors{
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    p{
+        max-width:300px;
+    }
+}
+
+.Com-Con{
+    max-width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .connectors{
+        margin-top: 30px;
+    }
+
+}
+
+.numbers{
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    p{
+        max-width: 300px;
+    }
+
+    .numbers-table{
+        max-width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        tr{
+            max-width: 310px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.basic{
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    p{
+        max-width: 300px;
+    }
+
+    .basic-table{
+        max-width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        tr{
+            max-width: 310px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.examples{
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h2{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    p{
+        max-width: 300px;
+    }
+
+}
+
+
+}

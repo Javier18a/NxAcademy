@@ -4,8 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_niveles/style.css">
-    <link rel="stylesheet" href="../style/main.css">
+    <script src ="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../style/main.css">
+    <link rel="stylesheet" href="../../../style/style.css">
+    <link rel="stylesheet" href="../../../style/mediaquery.css">
+    <link rel="stylesheet" href="../style_niveles/style.css">
+    <link rel="stylesheet" href="../style_niveles/madiaquery-niveles.css">
     <title>Princimiante Nx</title>
 </head>
 
@@ -13,18 +18,37 @@
 
     <header>
         <div class="logo">
-            <h1>NxAcademy</h1>
+            <h1 translate="no"> NxAcademy</h1>
         </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../extra/cursos.html">Cursos</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#"> Contacto</a></li>
-                <li><a href="#">Soporte</a></li>
-            </ul>
-        </nav>
+        <div class="container__menu">
+            <div class="menu">
+                <input type="checkbox" id="check__menu">
+                <label id="lable__check" for="check__menu">
+                    <i class="fa-solid fa-bars icon__menu"></i>
+                </label>
+                <nav>
+                    <ul>
+                        <li><a href="../../../index.html">Inicio</a></li>
+                        <li class="aprende"> Cursos
+                            <ul>
+                                <li><a href="../Ingles_Page.html">Ingles</a></li>
+
+                                <li><a href="#">Español <i class="fa-solid fa-lock"></i></a></li>
+
+                                <li><a href="#">Francés <i class="fa-solid fa-lock"></i> </a> </li>
+
+                                <li><a href="#">Portugués <i class="fa-solid fa-lock"></i></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../../../extra/Nosotros.html">Nosotros</a></li>
+                        <li><a href="../../../extra/Contactos.html">Contactos</a></li>
+                        <li><a href="../../../extra/Soporte.html">Soporte</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
+
 
     <section class="hero">
 
@@ -46,40 +70,40 @@
                 <table class="alphabet-table" style="border-collapse: collapse;  text-align: center;">
                     <tbody>
                         <tr>
-                            <td style="border: 1px solid black; padding: 10px;">A (ei)</td>
-                            <td style="border: 1px solid black; padding: 10px;">B (bi)</td>
-                            <td style="border: 1px solid black; padding: 10px;">C (si)</td>
-                            <td style="border: 1px solid black; padding: 10px;">D (di)</td>
-                            <td style="border: 1px solid black; padding: 10px;">E (i)</td>
-                            <td style="border: 1px solid black; padding: 10px;">F (ef)</td>
+                            <td style="border: 1px solid black; padding: 5px;">A (ei)</td>
+                            <td style="border: 1px solid black; padding: 5px;">B (bi)</td>
+                            <td style="border: 1px solid black; padding: 5px;">C (si)</td>
+                            <td style="border: 1px solid black; padding: 5px;">D (di)</td>
+                            <td style="border: 1px solid black; padding: 5px;">E (i)</td>
+                            <td style="border: 1px solid black; padding: 5px;">F (ef)</td>
                         </tr>
                         <tr>
-                            <td style="border: 1px solid black; padding: 10px;">G (yi)</td>
-                            <td style="border: 1px solid black; padding: 10px;">H (eich)</td>
-                            <td style="border: 1px solid black; padding: 10px;">I (ai)</td>
-                            <td style="border: 1px solid black; padding: 10px;">J (yei)</td>
-                            <td style="border: 1px solid black; padding: 10px;">K (kei)</td>
-                            <td style="border: 1px solid black; padding: 10px;">L (el)</td>
+                            <td style="border: 1px solid black; padding: 5px;">G (yi)</td>
+                            <td style="border: 1px solid black; padding: 5px;">H (eich)</td>
+                            <td style="border: 1px solid black; padding: 5px;">I (ai)</td>
+                            <td style="border: 1px solid black; padding: 5px;">J (yei)</td>
+                            <td style="border: 1px solid black; padding: 5px;">K (kei)</td>
+                            <td style="border: 1px solid black; padding: 5px;">L (el)</td>
                         </tr>
                         <tr>
-                            <td style="border: 1px solid black; padding: 10px;">M (em)</td>
-                            <td style="border: 1px solid black; padding: 10px;">N (en)</td>
-                            <td style="border: 1px solid black; padding: 10px;">O (ou)</td>
-                            <td style="border: 1px solid black; padding: 10px;">P (pi)</td>
-                            <td style="border: 1px solid black; padding: 10px;">Q (kiu)</td>
-                            <td style="border: 1px solid black; padding: 10px;">R (ar)</td>
+                            <td style="border: 1px solid black; padding: 5px;">M (em)</td>
+                            <td style="border: 1px solid black; padding: 5px;">N (en)</td>
+                            <td style="border: 1px solid black; padding: 5px;">O (ou)</td>
+                            <td style="border: 1px solid black; padding: 5px;">P (pi)</td>
+                            <td style="border: 1px solid black; padding: 5px;">Q (kiu)</td>
+                            <td style="border: 1px solid black; padding: 5px;">R (ar)</td>
                         </tr>
                         <tr>
-                            <td style="border: 1px solid black; padding: 10px;">S (es)</td>
-                            <td style="border: 1px solid black; padding: 10px;">T (ti)</td>
-                            <td style="border: 1px solid black; padding: 10px;">U (iu)</td>
-                            <td style="border: 1px solid black; padding: 10px;">V (vi)</td>
-                            <td style="border: 1px solid black; padding: 10px;">W (doblieu)</td>
-                            <td style="border: 1px solid black; padding: 10px;">X (eks)</td>
+                            <td style="border: 1px solid black; padding: 5px;">S (es)</td>
+                            <td style="border: 1px solid black; padding: 5px;">T (ti)</td>
+                            <td style="border: 1px solid black; padding: 5px;">U (iu)</td>
+                            <td style="border: 1px solid black; padding: 5px;">V (vi)</td>
+                            <td style="border: 1px solid black; padding: 5px;">W (doblieu)</td>
+                            <td style="border: 1px solid black; padding: 5px;">X (eks)</td>
                         </tr>
                         <tr>
-                            <td style="border: 1px solid black; padding: 10px;">Y (uai)</td>
-                            <td style="border: 1px solid black; padding: 10px;">Z (zi)</td>
+                            <td style="border: 1px solid black; padding: 5px;">Y (uai)</td>
+                            <td style="border: 1px solid black; padding: 5px;">Z (zi)</td>
                         </tr>
                     </tbody>
                 </table>
@@ -1083,7 +1107,7 @@
 
     <footer>
         <div class="footer-content">
-            <p>&copy; 2025 Aprende Inglés Fácil. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Aprende idiomas fácil. Todos los derechos reservados.</p>
             <p>Desarrollado por Ing.Javier</p>
         </div>
     </footer>
