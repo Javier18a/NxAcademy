@@ -9,6 +9,8 @@ body {
 
 .hero{
     width: 100%;
+    flex-direction: column;
+    display: flex;
 }
 
 /*Ingles_Page*/
